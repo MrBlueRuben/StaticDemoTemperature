@@ -14,9 +14,32 @@
                 switch (selection)
                 {
                     case "C":
-                    case "C":
-                        Console.WriteLine("Please enter Celsius temperature:");
+                    case "c":
+                        Console.Write("Please enter the Celsius temperature: ");
+                        farenheit = Helper.CelsiusToFahrenheit(Console.ReadLine());
+                        Console.WriteLine($"Temperature in Fahrenheit: {farenheit:f2}");
+                        break;
+
+                    case "F":
+                    case "f":
+                        Console.WriteLine("Please enter the Fahrenheit temperature:");
+                        celsius = TempConverter.FahrenheitToCesius(Console.ReadLine());
+                        break;
+
+                    case "K":
+                    case "k":
+
+                        Console.WriteLine("Please enter Kelvin temperature: ");
                         
+                        break;
+
+                    case "Q":
+                    case "q":
+                        break;
+
+                    default:
+                        Console.WriteLine("Please try again");
+                        break;
                 }
 
 
