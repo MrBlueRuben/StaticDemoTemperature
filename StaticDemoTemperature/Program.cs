@@ -4,11 +4,22 @@
     {
         static void Main(string[] args)
         {
-            string selection = Console.ReadLine();
+            string selection = String.Empty;
             while (selection != "q" && selection != "Q" )
             {
                 Console.WriteLine("Enter C)elsius to Farenheit or\nF)arenheit to Celsius or\nK)elvin to Celsius or\nQ)uit");
-                Console.WriteLine();
+                selection = Console.ReadLine();
+                double farenheit, celsius = 0;
+
+                switch (selection)
+                {
+                    case "C":
+                    case "C":
+                        Console.WriteLine("Please enter Celsius temperature:");
+                        
+                }
+
+
             }
         }
     }
