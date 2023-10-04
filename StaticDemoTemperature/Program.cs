@@ -4,8 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter C)elsius to Farenheit or\nF)arenheit to Celsius or\nK)elvin to Celsius or\nQ)uit");
-
+            string selection = Console.ReadLine();
+            while (selection != "q" && selection != "Q" )
+            {
+                Console.WriteLine("Enter C)elsius to Farenheit or\nF)arenheit to Celsius or\nK)elvin to Celsius or\nQ)uit");
+                Console.WriteLine();
+            }
         }
     }
 }
