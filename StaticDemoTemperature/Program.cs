@@ -17,13 +17,14 @@
                     case "c":
                         Console.Write("Please enter the Celsius temperature: ");
                         farenheit = Helper.CelsiusToFahrenheit(Console.ReadLine());
-                        Console.WriteLine($"Temperature in Fahrenheit: {farenheit:f2}");
+                        Console.WriteLine($"Temperature in Fahrenheit: {farenheit:f2}\n");
                         break;
 
                     case "F":
                     case "f":
                         Console.WriteLine("Please enter the Fahrenheit temperature:");
                         celsius = TempConverter.FahrenheitToCesius(Console.ReadLine());
+                        Console.WriteLine($"Temperature in Celsius: {celsius:f2}\n");
                         break;
 
                     case "K":
@@ -31,10 +32,12 @@
 
                         Console.WriteLine("Please enter Kelvin temperature: ");
                         celsius = TempConverter.KelvinToCelsius(Console.ReadLine());
+                        Console.WriteLine($"Temperature in Celsius: {celsius:f2}\n");
                         break;
 
                     case "Q":
                     case "q":
+                        Console.WriteLine("See you next time");
                         break;
 
                     default:
