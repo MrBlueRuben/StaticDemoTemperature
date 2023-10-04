@@ -30,7 +30,7 @@
                     case "k":
 
                         Console.WriteLine("Please enter Kelvin temperature: ");
-                        
+                        celsius = TempConverter.KelvinToCelsius(Console.ReadLine());
                         break;
 
                     case "Q":
